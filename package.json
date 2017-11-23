@@ -11,5 +11,8 @@
     "url": "git+ssh://git@github.com/vonovak/navigation-experimental-fork.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "prop-types": "^15.6.0"
+  }
 }

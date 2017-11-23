@@ -12,6 +12,7 @@
 'use strict';
 const { Animated, View, StyleSheet, Easing } = require('react-native');
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 const NavigationPropTypes = require('./NavigationPropTypes');
 const NavigationScenesReducer = require('./Reducer/NavigationScenesReducer');
 
@@ -44,8 +45,6 @@ type State = {
   progress: NavigationAnimatedValue,
   scenes: Array<NavigationScene>,
 };
-
-const { PropTypes } = React;
 
 const DefaultTransitionSpec = {
   duration: 250,

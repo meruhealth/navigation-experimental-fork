@@ -12,6 +12,7 @@
 'use strict';
 
 import type { NavigationSceneRendererProps } from 'NavigationTypeDefinition';
+import PropTypes from 'prop-types';
 
 /**
  * React component PropTypes Definitions. Consider using this as a supplementary
@@ -21,8 +22,6 @@ import type { NavigationSceneRendererProps } from 'NavigationTypeDefinition';
  */
 const { Animated } = require('react-native');
 import React, { Component } from 'react';
-
-const { PropTypes } = React;
 
 /* NavigationAction */
 const action = PropTypes.shape({
