@@ -39,10 +39,10 @@ const NavigationCardStackStyleInterpolator = require('./NavigationCardStackStyle
 const NavigationPropTypes = require('../NavigationPropTypes');
 const NavigationTransitioner = require('../NavigationTransitioner');
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 const { Animated, StyleSheet, View } = require('react-native');
 
-const { PropTypes } = React;
 const { Directions } = NavigationCardStackPanResponder;
 
 import type {
