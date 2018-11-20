@@ -138,7 +138,7 @@ class NavigationTransitioner extends React.Component<any, Props, State> {
 
     const transitionSpec = {
       ...DefaultTransitionSpec,
-      ...transitionUserSpec,
+      ...transitionUserSpec
     };
 
     const { timing } = transitionSpec;
