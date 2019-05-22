@@ -42,4 +42,6 @@ android/keystores/debug.keystore
 
 coverage/
 
-lib/
+# Source
+#
+src/

@@ -1,0 +1,29 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "extends": ["standard"],
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "plugins": [],
+  "globals": {
+    "jest": true,
+    "expect": true,
+    "it": true,
+    "describe": true,
+    "fetch": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "beforeAll": true,
+    "afterAll": true,
+    "__DEV__": true
+  },
+  "rules": {
+    "comma-dangle": ["warn", "always-multiline"],
+    "no-unused-vars": ["warn", { "vars": "all", "args": "none" }],
+  },
+  "root": true
+}

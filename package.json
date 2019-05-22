@@ -1,10 +1,13 @@
 {
   "name": "@meru/navigation-experimental-fork",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "NavigationExperimental from RN 0.43.3. Useful when you still depend on it in RN >= 0.44.",
-  "main": "NavigationExperimental.js",
+  "main": "./lib/NavigationExperimental.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --out-dir lib --source-maps --ignore **/__tests__,**/__mocks__ && cp -r src/NavigationExperimentalComponents/assets lib/NavigationExperimentalComponents/assets && node scripts/prepublish.js",
+    "publish": "yarn build && npm publish lib/"
   },
   "repository": {
     "type": "git",
@@ -14,5 +17,17 @@
   "license": "ISC",
   "dependencies": {
     "prop-types": "^15.6.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.23.0",
+    "babel-core": "6.22.1",
+    "babel-plugin-transform-class-properties": "6.22.0",
+    "babel-plugin-transform-object-rest-spread": "6.22.0",
+    "babel-preset-es2015": "6.22.0",
+    "babel-preset-react-native": "^4.0.1",
+    "eslint": "3.15.0",
+    "eslint-config-standard": "6.2.1",
+    "eslint-plugin-promise": "3.4.1",
+    "eslint-plugin-standard": "2.0.1"
   }
 }
