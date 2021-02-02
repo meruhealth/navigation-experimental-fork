@@ -176,6 +176,7 @@ class NavigationPagerPanResponder extends NavigationAbstractPanResponder {
     Animated.timing(props.position, {
       toValue: props.navigationState.index,
       duration: ANIMATION_DURATION,
+      useNativeDriver: false,
     }).start();
   }
 }
